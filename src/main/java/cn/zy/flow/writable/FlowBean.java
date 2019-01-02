@@ -1,4 +1,4 @@
-package cn.zy.flow;
+package cn.zy.flow.writable;
 
 import java.io.DataInput;
 import java.io.DataOutput;

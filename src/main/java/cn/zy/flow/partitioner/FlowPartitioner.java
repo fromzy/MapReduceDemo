@@ -1,6 +1,6 @@
 package cn.zy.flow.partitioner;
 
-import cn.zy.flow.FlowBean;
+import cn.zy.flow.writable.FlowBean;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Partitioner;
 
