@@ -1,5 +1,5 @@
 package cn.zy.flow;
-import cn.zy.partitioner.FlowPartitioner;
+import cn.zy.flow.partitioner.FlowPartitioner;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.Text;

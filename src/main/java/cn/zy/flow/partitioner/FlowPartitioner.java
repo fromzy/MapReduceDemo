@@ -1,4 +1,4 @@
-package cn.zy.partitioner;
+package cn.zy.flow.partitioner;
 
 import cn.zy.flow.FlowBean;
 import org.apache.hadoop.io.Text;
