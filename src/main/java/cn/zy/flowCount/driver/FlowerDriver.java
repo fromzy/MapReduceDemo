@@ -1,6 +1,8 @@
-package cn.zy.flow;
-import cn.zy.flow.partitioner.FlowPartitioner;
-import cn.zy.flow.writable.FlowBean;
+package cn.zy.flowCount.driver;
+import cn.zy.flowCount.mapper.FlowMapper;
+import cn.zy.flowCount.reducer.FlowReducer;
+import cn.zy.flowCount.partitioner.FlowPartitioner;
+import cn.zy.flowCount.writable.FlowBean;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.Text;

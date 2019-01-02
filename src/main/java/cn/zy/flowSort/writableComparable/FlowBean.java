@@ -1,13 +1,17 @@
-package cn.zy.flow.writable;
+package cn.zy.flowSort.writableComparable;
+
+import org.apache.hadoop.io.WritableComparable;
 
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
-import org.apache.hadoop.io.Writable;
 
-// bean对象要实例化
-public class FlowBean implements Writable {
-
+/**
+ * @Author: zhangying
+ * @Date: 2019/1/2 14:00
+ * @Version 1.0
+ */
+public class FlowBean implements WritableComparable<FlowBean>{
     private long upFlow;    //上行流量
     private long downFlow;  //下行流量
     private long sumFlow;   //总流量
@@ -51,8 +55,8 @@ public class FlowBean implements Writable {
 
 // 序列化
     /*
-    * 序列化，即把内存中的对象写到磁盘中
-    * */
+     * 序列化，即把内存中的对象写到磁盘中
+     * */
 
     public void write(DataOutput out) throws IOException {
         out.writeLong(upFlow);
@@ -62,9 +66,9 @@ public class FlowBean implements Writable {
 
 //反序列化
     /*
-    * 注意反序列化的顺序和序列化的顺序完全一致，
-    * 反序列化，把磁盘中的对象读入内存中
-    * */
+     * 注意反序列化的顺序和序列化的顺序完全一致，
+     * 反序列化，把磁盘中的对象读入内存中
+     * */
 
 
     public void readFields(DataInput in) throws IOException {
@@ -78,5 +82,12 @@ public class FlowBean implements Writable {
     public String toString() {
         return upFlow + "\t" + downFlow + "\t" + sumFlow;
     }
-}
 
+
+    //排序
+    /*
+    * 倒叙排序*/
+    public int compareTo(FlowBean o) {
+        return this.sumFlow>o.getSumFlow()?-1:1;
+    }
+}

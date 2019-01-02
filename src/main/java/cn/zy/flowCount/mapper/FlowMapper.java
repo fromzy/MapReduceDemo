@@ -1,8 +1,8 @@
-package cn.zy.flow;
+package cn.zy.flowCount.mapper;
 
 import java.io.IOException;
 
-import cn.zy.flow.writable.FlowBean;
+import cn.zy.flowCount.writable.FlowBean;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;

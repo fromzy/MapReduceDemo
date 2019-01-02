@@ -1,6 +1,6 @@
-package cn.zy.flow;
+package cn.zy.flowCount.reducer;
 
-import cn.zy.flow.writable.FlowBean;
+import cn.zy.flowCount.writable.FlowBean;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 import java.io.IOException;
