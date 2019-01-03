@@ -12,7 +12,7 @@ import org.apache.hadoop.mapreduce.Partitioner;
 /*
 * 泛型对应着map的输出k-v
 * */
-public class OrderPatitioner extends Partitioner<OrderBean, NullWritable> {
+public class OrderSortPartitioner extends Partitioner<OrderBean, NullWritable> {
 
     @Override
     public int getPartition(OrderBean key, NullWritable value, int numReduceTasks) {

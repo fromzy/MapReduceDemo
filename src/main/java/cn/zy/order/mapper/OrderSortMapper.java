@@ -31,7 +31,7 @@ public class OrderSortMapper extends Mapper<LongWritable, Text, OrderBean, NullW
         // 3 封装bean
         bean.setOrderId(fields[0]);
         bean.setPrice(Double.parseDouble(fields[2]));
-        
+
 
 
         // 4 写出
