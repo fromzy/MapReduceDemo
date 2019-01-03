@@ -1,6 +1,6 @@
 package cn.zy.flowSort.reducer;
 
-import cn.zy.flowSort.writableComparable.FlowBean;
+import cn.zy.flowSort.writable.FlowBean;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 

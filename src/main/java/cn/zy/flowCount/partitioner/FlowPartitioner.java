@@ -11,6 +11,7 @@ import org.apache.hadoop.mapreduce.Partitioner;
  */
 /*
 * 要求根据电话号码，分区
+* 泛型对应着map输出的k-v，
 * */
 public class FlowPartitioner extends Partitioner<Text, FlowBean> {
     @Override

@@ -1,6 +1,6 @@
 package cn.zy.flowSort.mapper;
 
-import cn.zy.flowSort.writableComparable.FlowBean;
+import cn.zy.flowSort.writable.FlowBean;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;

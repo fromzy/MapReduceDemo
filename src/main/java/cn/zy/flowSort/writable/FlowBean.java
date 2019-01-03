@@ -1,4 +1,4 @@
-package cn.zy.flowSort.writableComparable;
+package cn.zy.flowSort.writable;
 
 import org.apache.hadoop.io.WritableComparable;
 
@@ -69,8 +69,6 @@ public class FlowBean implements WritableComparable<FlowBean>{
      * 注意反序列化的顺序和序列化的顺序完全一致，
      * 反序列化，把磁盘中的对象读入内存中
      * */
-
-
     public void readFields(DataInput in) throws IOException {
         upFlow = in.readLong();
         downFlow = in.readLong();
@@ -88,6 +86,6 @@ public class FlowBean implements WritableComparable<FlowBean>{
     /*
     * 倒叙排序*/
     public int compareTo(FlowBean o) {
-        return this.sumFlow>o.getSumFlow()?-1:1;
+        return this.sumFlow>o.getSumFlow()?-1:1;//-1倒叙，1正序
     }
 }

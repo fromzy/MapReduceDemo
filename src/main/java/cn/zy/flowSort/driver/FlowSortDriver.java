@@ -2,11 +2,10 @@ package cn.zy.flowSort.driver;
 
 import cn.zy.flowSort.mapper.FlowSortMapper;
 import cn.zy.flowSort.reducer.FlowSortReducer;
-import cn.zy.flowSort.writableComparable.FlowBean;
+import cn.zy.flowSort.writable.FlowBean;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapred.FileInputFormat;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
